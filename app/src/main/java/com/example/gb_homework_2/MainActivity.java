@@ -9,6 +9,7 @@ public class MainActivity extends AppCompatActivity {
 
     private ActivityMainBinding binding;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -16,8 +17,8 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        binding.textView.setText("верхняя строчка, настроенная из кода");
-        binding.textView2.setText("нижняя строчка, настроенная из кода");
+        binding.customView.setTopText("верхняя строчка, настроенная из кода");
+        binding.customView.setBottomText("нижняя строчка, настроенная из кода");
 
     }
 }
